@@ -9,6 +9,7 @@ This project uses the Istio add-on for minishift in conjunction with the BookInf
 4. minishift profile uses 8GB of RAM and 4 cores, so you probably need more
 5. Cloned minishift-addons repo https://github.com/minishift/minishift-addon
 6. A base working knowledge of Minishift and OpenShift
+7. ISTIO ctl configured and installed https://istio.io/docs/setup/kubernetes/download-release/
 
 ## Referenced Projects
 1. https://github.com/minishift/minishift-addons/tree/master/add-ons/istio
