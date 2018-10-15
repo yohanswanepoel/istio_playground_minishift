@@ -11,3 +11,7 @@ export GATEWAY_URL=$(oc get route -n istio-system istio-ingressgateway -o jsonpa
 echo $GATEWAY_URL
 
 #http://$GATEWAY_URL/productpage
+
+curl -o destination-rule-all.yaml https://raw.githubusercontent.com/istio/istio/release-1.0/samples/bookinfo/networking/destination-rule-all.yaml
+oc apply -f destination-rule-all-mtls.yaml
+rm destination-rule-all.yaml
