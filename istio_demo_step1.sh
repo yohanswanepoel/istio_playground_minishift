@@ -1,3 +1,4 @@
+minishift stop
 minishift profile delete servicemesh
 minishift profile set servicemesh
 minishift config set memory 10GB
