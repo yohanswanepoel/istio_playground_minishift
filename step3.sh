@@ -15,7 +15,7 @@ echo $GATEWAY_URL
 #http://$GATEWAY_URL/productpage
 
 curl -o destination-rule-all.yaml https://raw.githubusercontent.com/istio/istio/release-1.0/samples/bookinfo/networking/destination-rule-all.yaml
-oc apply -f destination-rule-all-mtls.yaml
+oc apply -f destination-rule-all.yaml
 rm destination-rule-all.yaml
 
 rm bookinfo.yaml
