@@ -34,7 +34,7 @@ This will delete the servicemesh profile if it exists and create a new one
 
 This will install and enable istio as per the referenced addons project (https://github.com/minishift/minishift-addons/tree/master/add-ons/istio)
 
-Wait for all the under istio system to become available. Elastic Search is typically the last one.
+Wait for all the under istio system to become available. Elastic Search and Kiali are typically the last ones.
 
 ### 3. Install Book-Info
 1. Review the istio_demo_step3.sh file
