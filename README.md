@@ -4,7 +4,7 @@ This project uses the Istio add-on for minishift in conjunction with the BookInf
 
 ## Pre-Reqs and Tested Environment
 1. Red Hat CDK and Minishift
-2. OpenShift verstion 3.10 and 3.11
+2. OpenShift verstion 3.10
 3. minishift setup-cdk done
 4. minishift profile uses 8GB of RAM and 4 cores, so you probably need more
 5. Cloned minishift-addons repo https://github.com/minishift/minishift-addon
@@ -17,12 +17,12 @@ This project uses the Istio add-on for minishift in conjunction with the BookInf
 ## Steps to run
 
 ### 1. Setup Minishift (Red Hat CDK)
-1. Review istio_demo_step1.sh: Change the OpenShift version if required. Default 3.11.16
+1. Review istio_demo_step1.sh: Change the OpenShift version if required. Default 3.10.45
 2. Run: istio_demo_step1.sh
 3. Wait for minishift start up and verify that things are working
 
 ### 1. Setup Minishift (Origin)
-1. Review istio_demo_step1_origin.sh: Change the OpenShift version if required. Default 3.11.0
+1. Review istio_demo_step1_origin.sh: Change the OpenShift version if required. Default 3.10.0
 2. Run: istio_demo_step1_origin.sh
 3. Wait for minishift start up and verify that things are working
 
