@@ -1,0 +1,1 @@
+# istio_playground_minishift
