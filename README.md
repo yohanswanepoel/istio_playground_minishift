@@ -18,28 +18,28 @@ This project uses the Istio add-on for minishift in conjunction with the BookInf
 ## Steps to run
 
 ### 1. Setup Minishift (Red Hat CDK)
-1. Review istio_demo_step1.sh: Change the OpenShift version if required. Default 3.10.45
-2. Run: istio_demo_step1.sh
+1. Review step1_cdk.sh: Change the OpenShift version if required. Default 3.10.45
+2. Run: step1_cdk.sh
 3. Wait for minishift start up and verify that things are working
 
 ### 1. Setup Minishift (Origin)
-1. Review istio_demo_step1_origin.sh: Change the OpenShift version if required. Default 3.10.0
-2. Run: istio_demo_step1_origin.sh
+1. Review step1_origin.sh: Change the OpenShift version if required. Default 3.10.0
+2. Run: step1_origin.sh
 3. Wait for minishift start up and verify that things are working
 
-This will delete the servicemesh profile if it exists and create a new one 
+This will delete the servicemesh profile if it exists and create a new one
 
 ### 2. Install Istio Add-on
-1. Review the istio_demo_step2.sh file: CHange the path to minishift-addons or run the file from outside the minishift-addons folder
-2. Run the istio_demo_step2.sh file
+1. Review the step2.sh file: CHange the path to minishift-addons or run the file from outside the minishift-addons folder
+2. Run the step2.sh file
 
 This will install and enable istio as per the referenced addons project (https://github.com/minishift/minishift-addons/tree/master/add-ons/istio)
 
 Wait for all the under istio system to become available. Elastic Search and Kiali are typically the last ones.
 
 ### 3. Install Book-Info
-1. Review the istio_demo_step3.sh file
-2. Run the istio_demo_step3.sh file
+1. Review the step3.sh file
+2. Run the step3.sh file
 
 This will install the Book Info demo under My Project for the admin user and expose a gateway using ISTIO. The path to the service can be found running echo $GATEWAY_URL/productpage
 
