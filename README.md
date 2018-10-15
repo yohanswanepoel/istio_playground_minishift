@@ -51,5 +51,18 @@ This section is Work in Progress
 2. echo $GATEWAY_URL
 3. Send some load: while sleep .2; do curl -o /dev/null -s -w "%{http_code}\n" http://$GATEWAY_URL/productpage; done
 
+
+### 5. Some Routing DEMOS
+1. Routing to service 1 only: ./route_to_reviews_version_1.sh
+2. Route based on user Jason: ./route_based_on_user.sh
+3. Clean_up: ./reset_virtual_service.sh
+https://istio.io/docs/tasks/traffic-management/request-routing/
+
+
+### 6. Telemetry demos
+1. Tracing: https://istio.io/docs/tasks/telemetry/distributed-tracing/
+2. Prometheus queries: https://istio.io/docs/tasks/telemetry/querying-metrics/ 
+3. Grafana: https://istio.io/docs/tasks/telemetry/using-istio-dashboard/
+
 ## TODO
 1. Externalise variables
