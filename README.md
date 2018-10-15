@@ -46,6 +46,9 @@ Once the services are running you can start playing around.
 
 ### 4. Things to try out
 This section is Work in Progress
+1. export the ISTIO gateway URL as an environment variable: export GATEWAY_URL=$(oc get route -n istio-system istio-ingressgateway -o jsonpath='{.spec.host}')
+2. echo $GATEWAY_URL
+3. Send some load: while sleep .2; do curl -o /dev/null -s -w "%{http_code}\n" http://$GATEWAY_URL/productpage; done
 
 ## TODO
 1. Externalise variables
