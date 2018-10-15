@@ -6,7 +6,6 @@ oc adm policy add-scc-to-user anyuid -z default -n myproject
 oc adm policy add-scc-to-user privileged -z default -n myproject
 wget https://raw.githubusercontent.com/Maistra/bookinfo/master/bookinfo.yaml
 oc apply -n myproject -f <(istioctl kube-inject -f bookinfo.yaml)
-oc apply -n myproject -f bookinfo.yaml
 oc apply -n myproject -f https://raw.githubusercontent.com/Maistra/bookinfo/master/bookinfo-gateway.yaml
 export GATEWAY_URL=$(oc get route -n istio-system istio-ingressgateway -o jsonpath='{.spec.host}')
 
