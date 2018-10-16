@@ -2,6 +2,8 @@
 
 This project uses the Istio add-on for minishift in conjunction with the BookInfo application to create a clean setup for testing out ISTIO.
 
+This was required as my ISTIO minishift would stop working after a restart, as some configuration seems to be transient.
+
 ## Pre-Reqs and Tested Environment
 1. Red Hat CDK and Minishift
 2. OpenShift verstion 3.10
