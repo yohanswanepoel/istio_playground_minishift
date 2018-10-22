@@ -9,7 +9,7 @@ This was required as my ISTIO minishift would stop working after a restart, as s
 2. OpenShift verstion 3.10
 3. minishift setup-cdk done
 4. minishift profile uses 8GB of RAM and 4 cores, so you probably need more
-5. Cloned minishift-addons repo https://github.com/minishift/minishift-addons/tree/master/add-ons
+5. Cloned minishift-addons repo https://github.com/minishift/minishift-addons
 6. A base working knowledge of Minishift and OpenShift
 7. ISTIO ctl configured and installed https://istio.io/docs/setup/kubernetes/download-release/
 
