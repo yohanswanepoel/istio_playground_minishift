@@ -40,8 +40,9 @@ This will install and enable istio as per the referenced addons project (https:/
 Wait for all the under istio system to become available. Elastic Search and Kiali are typically the last ones.
 
 ### 3. Install Book-Info
-1. Review the step3.sh file
-2. Run the step3.sh file
+1. If you installed with mTLS enabled use the mlts versions of step3 else use the no_mtls version
+1. Review the step3_[no_mtls|with_mtls].sh file
+2. Run the step3_[no_mtls|with_mtls].sh file
 
 This will install the Book Info demo under My Project for the admin user and expose a gateway using ISTIO. The path to the service can be found running echo $GATEWAY_URL/productpage
 
@@ -63,7 +64,7 @@ https://istio.io/docs/tasks/traffic-management/request-routing/
 
 ### 6. Telemetry demos
 1. Tracing: https://istio.io/docs/tasks/telemetry/distributed-tracing/
-2. Prometheus queries: https://istio.io/docs/tasks/telemetry/querying-metrics/ 
+2. Prometheus queries: https://istio.io/docs/tasks/telemetry/querying-metrics/
 3. Grafana: https://istio.io/docs/tasks/telemetry/using-istio-dashboard/
 
 ## TODO
